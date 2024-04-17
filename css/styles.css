@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+/* Estilização geral */
+body{
+    display: flex;
+    justify-content: center;
+    background: hsl(30, 54%, 90%);
+    font-size: 16px;
+}
+
+.main-content{
+    background: hsl(330, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px;
+    border-radius: 15px;
+    justify-content: center;
+    font-family: "Young Serif";
+}
+
+div{
+    margin: 5px 30px;
+}
+
+/* Estilização dos subtítulos */
+.description{
+    margin-top: 15px;
+}
+
+.preparation{
+    margin: 50px;
+    padding: 10px 20px;
+    background: hsl(30, 54%, 90%);
+    border-radius: 15px;
+}
+
+.title h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.preparation h2{
+    color: hsl(332, 51%, 32%);
+}
+ul, ol{
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+/* Estilização da imagem */
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    margin-top: 40px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+
+.title li, p, tr{
+    font-size: 16px ;
+    color: hsl(30, 10%, 34%);
+}
+
+/* Estilização da tabela */
+table{
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 20px;
+}
+tr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.info{
+    color: hsl(14, 45%, 36%);
+}
+
+@media(max-width: 375px){
+    .main-content{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        margin:0;
+        margin-left: 18px;
+        width: 90%;
+    }
+
+    img{
+        width: 300px;
+    }
+
+    .preparation{
+        width: 73%;
+        margin: 20px;
+    }
+}
